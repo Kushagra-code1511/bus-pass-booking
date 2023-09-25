@@ -20,7 +20,7 @@ const __dirname = dirname(__filename)
 
 const app = express();
 
-app.use(express.static(path.join(__dirname,"../Frontend")))
+app.use(express.static(path.join(__dirname,"../Frontend"))) //This is used to show the static files like images,videos,css file etc to the frontend if not done then the they will not pass
 app.get("/", home);  //to get the home page from home.js in the the folder route
 app.get("/about.html", about)
 app.get("/contact.html",contact)
